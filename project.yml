@@ -1,0 +1,30 @@
+name: MealValue
+options:
+  bundleIdPrefix: com.mealvalue
+  deploymentTarget:
+    iOS: "17.0"
+  xcodeVersion: "15.0"
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "5.9"
+    TARGETED_DEVICE_FAMILY: "1,2"
+    DEVELOPMENT_TEAM: ""
+
+targets:
+  MealValue:
+    type: application
+    platform: iOS
+    sources:
+      - MealValue
+    settings:
+      base:
+        INFOPLIST_FILE: MealValue/Resources/Info.plist
+        PRODUCT_BUNDLE_IDENTIFIER: com.mealvalue.app
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_STYLE: Automatic
+    entitlements:
+      path: MealValue/Resources/MealValue.entitlements
