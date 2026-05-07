@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "project": "MealValue",
+  "last_updated": "2026-05-07T00:00:00Z",
+  "scaffolded_types": [
+    {
+      "hk_identifier": "dietaryEnergyConsumed",
+      "hk_type": "HKQuantityTypeIdentifier",
+      "maps_to": "NutritionValues.calories",
+      "unit": "kilocalorie",
+      "swift_file": "MealValue/HealthKitDietaryEnergy.swift",
+      "status": "pending",
+      "scaffolded_at": null,
+      "reviewed_at": null,
+      "validated_at": null,
+      "review_notes": [],
+      "iteration_count": 0
+    },
+    {
+      "hk_identifier": "dietaryProtein",
+      "hk_type": "HKQuantityTypeIdentifier",
+      "maps_to": "NutritionValues.protein",
+      "unit": "gram",
+      "swift_file": "MealValue/HealthKitDietaryProtein.swift",
+      "status": "pending",
+      "scaffolded_at": null,
+      "reviewed_at": null,
+      "validated_at": null,
+      "review_notes": [],
+      "iteration_count": 0
+    },
+    {
+      "hk_identifier": "dietaryCarbohydrates",
+      "hk_type": "HKQuantityTypeIdentifier",
+      "maps_to": "NutritionValues.carbs",
+      "unit": "gram",
+      "swift_file": "MealValue/HealthKitDietaryCarbohydrates.swift",
+      "status": "pending",
+      "scaffolded_at": null,
+      "reviewed_at": null,
+      "validated_at": null,
+      "review_notes": [],
+      "iteration_count": 0
+    },
+    {
+      "hk_identifier": "dietaryFatTotal",
+      "hk_type": "HKQuantityTypeIdentifier",
+      "maps_to": "NutritionValues.fat",
+      "unit": "gram",
+      "swift_file": "MealValue/HealthKitDietaryFat.swift",
+      "status": "pending",
+      "scaffolded_at": null,
+      "reviewed_at": null,
+      "validated_at": null,
+      "review_notes": [],
+      "iteration_count": 0
+    },
+    {
+      "hk_identifier": "dietaryFiber",
+      "hk_type": "HKQuantityTypeIdentifier",
+      "maps_to": "NutritionValues.fiber",
+      "unit": "gram",
+      "swift_file": "MealValue/HealthKitDietaryFiber.swift",
+      "status": "pending",
+      "scaffolded_at": null,
+      "reviewed_at": null,
+      "validated_at": null,
+      "review_notes": [],
+      "iteration_count": 0
+    }
+  ],
+  "correlation_types": [
+    {
+      "hk_identifier": "food",
+      "hk_type": "HKCorrelationTypeIdentifier",
+      "maps_to": "MealRecord",
+      "child_types": [
+        "dietaryEnergyConsumed",
+        "dietaryProtein",
+        "dietaryCarbohydrates",
+        "dietaryFatTotal",
+        "dietaryFiber"
+      ],
+      "swift_file": "MealValue/HealthKitMealCorrelation.swift",
+      "status": "pending",
+      "scaffolded_at": null,
+      "reviewed_at": null,
+      "validated_at": null,
+      "review_notes": [],
+      "iteration_count": 0
+    }
+  ],
+  "base_files": {
+    "manager": "MealValue/HealthKitManager.swift",
+    "bridge_protocol": "MealValue/HealthKitBridge.swift"
+  }
+}
