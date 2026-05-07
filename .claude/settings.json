@@ -1,4 +1,9 @@
 {
+  "permissions": {
+    "allow": [
+      "Bash(git -C /home/user/meal-value log *)"
+    ]
+  },
   "hooks": {
     "PreToolUse": [
       {
